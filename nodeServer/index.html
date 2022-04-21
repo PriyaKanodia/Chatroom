@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <title>EMB Chatroom</title>
+        <script defer src="/client.js"></script>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <nav>
+            <img class="logo" src="/bubble_icon.png" alt="">
+            <h1>EMB ChatBot</h1>
+        </nav>
+        <div class="container">
+            <div class ="input" id="input-container"></div>
+            <div class="send" id="send-container">
+                <form action="#" id="form-container">
+                    <input class="input" type="text" name="inputMessage" id="inputMessage" placeholder="Type your text here...">
+                    <button class="btn" type="submit">Send </button>
+                </form>
+            </div>
+        </div>
+        <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+        <script src="/socket.io/socket.io.js"></script>
+    </body>
+</html>
